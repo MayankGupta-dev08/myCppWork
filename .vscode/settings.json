@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "any": "cpp",
+        "typeinfo": "cpp"
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.preferredDarkColorTheme": "One Dark Pro"
+}
