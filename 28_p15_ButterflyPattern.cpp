@@ -21,14 +21,35 @@ int main()
     int r;
     cout << "Enter the numbers of rows: ";
     cin >> r;
-    int sum = 0;
 
     for (int i = 1; i <= r; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= 2 * r; j++)
         {
-            sum += 1;
-            cout<<sum<<' ';
+            if (j <= i || j > ((2 * r) - i))
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+
+    for (int i = r; i >= 1; i--)
+    {
+        for (int j = 1; j <= 2 * r; j++)
+        {
+            if (j <= i || j > ((2 * r) - i))
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
         }
         cout << endl;
     }

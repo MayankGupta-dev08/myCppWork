@@ -3,8 +3,9 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "any": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "cmath": "cpp"
     },
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Cobalt2",
     "workbench.preferredDarkColorTheme": "One Dark Pro"
 }

@@ -1,0 +1,1 @@
+{"name":"Local: 51_decimalToOctal","url":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\51_decimalToOctal.cpp","tests":[{"id":1623243918700,"input":"1234","output":"2322"},{"id":1623243968230,"input":"100","output":"144"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\51_decimalToOctal.cpp","group":"local","local":true}

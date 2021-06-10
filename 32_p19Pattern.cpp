@@ -1,0 +1,37 @@
+/* To write a program to print Rhombus Pattern
+Enter the numbers of rows: 5
+
+* * * * *
+  * * * * *
+    * * * * *
+      * * * * *
+        * * * * *
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int r;
+    cout << "Enter the numbers of rows: ";
+    cin >> r;
+
+    for (int i = 0; i <= r-1; i++)
+    {
+        for (int j = 1; j <= (r+i); j++)
+        {
+            if (j<=i){
+                cout<<"  ";
+            }
+            else{
+                cout<<"* ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}

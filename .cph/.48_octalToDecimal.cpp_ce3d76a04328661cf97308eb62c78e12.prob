@@ -1,0 +1,1 @@
+{"name":"Local: 48_octalToDecimal","url":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\48_octalToDecimal.cpp","tests":[{"id":1623232631406,"input":"2322","output":"1234"},{"id":1623232681816,"input":"326753","output":"110059"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\48_octalToDecimal.cpp","group":"local","local":true}

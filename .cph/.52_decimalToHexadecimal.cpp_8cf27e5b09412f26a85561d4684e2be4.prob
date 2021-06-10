@@ -1,0 +1,1 @@
+{"name":"Local: 52_decimalToHexadecimal","url":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\52_decimalToHexadecimal.cpp","tests":[{"id":1623247219274,"input":"100","output":"64"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\52_decimalToHexadecimal.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 49_hexadecimalToDecimal","url":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\49_hexadecimalToDecimal.cpp","tests":[{"id":1623238900433,"input":"1CF","output":"463"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Mayank\\Coding\\C++\\myWork_cpp\\49_hexadecimalToDecimal.cpp","group":"local","local":true}
