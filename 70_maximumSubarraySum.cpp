@@ -6,6 +6,8 @@
 using namespace std;
 
 void subArray(int a[], int n){
+// This is basic solution from brute force method, and its having time complexity of O(n3), which is very bad.
+
     int maxSum = INT_MIN;
     cout<<"All possible subarrays from your array\n";
     
@@ -17,11 +19,13 @@ void subArray(int a[], int n){
                 cout<<a[k]<<' ';
             }
             maxSum = max(maxSum, sum);
-            cout<<"\t\t Sum:"<<sum<<endl;
+            cout<<"\t\t Sum: "<<sum<<endl;
         }
     }
     cout<<"Max Sum: "<<maxSum<<endl;
 }
+
+
 // void maxSubarraysum(int a[], int n){
 //     // int count =1;
 //     for (int i=0; i<n; i++){
