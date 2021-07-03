@@ -1,0 +1,10 @@
+--------This is File2--------
+first line in file2
+second line in file2
+third line in file2
+fourth line in file2
+for the time, this is it.
+
+--------Appending--------
+continuing from where we left
+we are finished updating!!!!
