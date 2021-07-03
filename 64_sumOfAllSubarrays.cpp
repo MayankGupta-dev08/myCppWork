@@ -6,20 +6,24 @@ A subsequence is a sequence that can be derived from an array by selecting zero 
 */
 
 
-#include <iostream>
 //#include <bits/stdc++.h>
+#include <iostream>
+#include <climits>
 using namespace std;
 
 void subArray(int a[], int n){
-    int count =1;
+    int maxSum = INT_MIN;
+    int count =0;
     for (int i=0; i<n; i++){
         int curr_sum =0;
         for (int j=i; j<n; j++){
             curr_sum += a[j];
-            cout<<"Sum of SubArray"<<count<<" : "<<curr_sum<<endl;
             count +=1;
+            cout<<"Sum of SubArray"<<count<<" : "<<curr_sum<<endl;
+            maxSum = max(maxSum, curr_sum);
         }
     }
+    cout<<"Max Subarray sum: "<<maxSum;
 }
 
 int main(){

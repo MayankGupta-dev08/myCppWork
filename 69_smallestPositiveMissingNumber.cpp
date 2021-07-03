@@ -1,5 +1,6 @@
 /*Find the smallest positive missing number in the given array.
 Example: [0, -10, 1, 3, -20], Ans = 2
+cONCEPT OF CHECK ARRAY TO FIND THE MISSING NUMBER.
 */
 
 #include<iostream>
