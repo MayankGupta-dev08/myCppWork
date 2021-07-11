@@ -1,5 +1,5 @@
-# myCppWork
-##All of my c++ work, programs, notes and other stuff..
+# myCppWork _All of my c++ work, programs, notes and other stuff.._
+## cpp Files
 
 `01_helloWord.cpp`
 
@@ -539,30 +539,30 @@
 
 `244_stockSpanProb_stack.cpp`
 
-###TEXT FILES
+### TEXT FILES
 
-**codeFor_ReadMe.py**
+_codeFor_ReadMe.py_
 
-__file1.txt__
+_file1.txt_
 
-`file2.txt`
+_file2.txt_
 
-`fileHandling8_quizProblem.txt`
+_fileHandling8_quizProblem.txt_
 
-`input.txt`
+_input.txt_
 
-`myHeader.h`
+_myHeader.h_
 
-`new`
+_new_
 
-`Notes`
+_Notes_
 
-`output.txt`
+_output.txt_
 
-`poem.txt`
+_poem.txt_
 
-`ReadMe.txt`
+_ReadMe.txt_
 
-`sample.txt`
+_sample.txt_
 
-`secretDiary.txt`
+_secretDiary.txt_
