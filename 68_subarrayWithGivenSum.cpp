@@ -7,7 +7,34 @@ GOOGLE, FB, VISA, AMAZON.
 //#include <bits/stdc++.h>
 using namespace std;
 
+// brute force approach
+// O(n*n)
+void subArraySum(int arr[], int n, int sum){
+    int curr_sum, i, j;
+ 
+    // Pick a starting point
+    for (i = 0; i < n; i++) {
+        curr_sum = arr[i];
+ 
+        // try all subarrays starting with 'i'
+        for (j = i + 1; j <= n; j++){
+        // we are checking curr sum of j at j+1
+            if (curr_sum == sum) {
+                cout << "Sum found between indexes "
+                     << i << " and " << j - 1<<endl;
+                return;
+            }
+            if (curr_sum > sum || j == n)
+                break;
+            curr_sum = curr_sum + arr[j];
+        }
+    }
+    cout << "No subarray found"<<endl;
+}
 
+
+// Optimised approach
+// time complexity - O(n)
 void subarrayWithGivenSum(int arr[], int n, int s){
     int first_idx=0, last_idx=0, sum=0;
     
@@ -17,8 +44,9 @@ void subarrayWithGivenSum(int arr[], int n, int s){
             last_idx++;
         }
         else if(sum==s){
-            cout<<first_idx+1<<" "<<last_idx<<endl;
-                break;
+            cout<<"Subarry with sum="<<s<<" found from: ";
+            cout<<first_idx<<" to "<<last_idx-1<<endl;
+                return;
         }
         else{
             sum=sum-arr[first_idx];
@@ -26,9 +54,7 @@ void subarrayWithGivenSum(int arr[], int n, int s){
             i--; // for checking again for that same value of i.
         }
     }
-    if(i>n){
-        cout<<"Not found"<<endl;
-    }
+    cout<<"No subarray with sum="<<s<<" found."<<endl;
 }
 
 
@@ -37,13 +63,20 @@ int main(){
     int n, s;
     cout<<"Enter a size of array: ";
     cin>>n;
-    int a[n];
+    int arr[n];
     cout<<"Enter the elements of your array.\n";
     for(int i=0; i<n; i++){
-        cin>>a[i];
+        cin>>arr[i];
     }
     cout<<"Enter a sum value for which you want subarray: ";
     cin>>s;
-    subarrayWithGivenSum(a,n, s);
+    // subArraySum(a,n, s);
+    subarrayWithGivenSum(arr,n, s);
     return 0;
 }
+
+// Enter a size of array: 8
+// Enter the elements of your array.
+// 15 2 4 8 9 5 10 23
+// Enter a sum value for which you want subarray: 23
+// Subarry with sum=23 found from: 1 to 4

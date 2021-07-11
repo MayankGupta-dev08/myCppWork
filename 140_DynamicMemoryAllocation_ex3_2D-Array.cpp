@@ -25,11 +25,11 @@ int main()
 	cout<<"Enter the size of 2D array: ";
 	cin>>m>>n;
 
-	// Declare memory block of size M
+	// Declare memory block of size m for rows
 	int** a = new int*[m];
 
 	for (int i = 0; i < m; i++){
-		// Declare a memory block of size n
+		// Declare a memory block of size n for columns
 		a[i] = new int[n];
 	}
 

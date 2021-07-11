@@ -40,3 +40,23 @@ int main(){
     cout<<endl;
     return 0;
 }
+
+// Enter a size of array: 5
+// Enter the elements of your array.
+// 1 2 3 4 5
+// Sum of SubArray1 : 1  
+// Sum of SubArray2 : 3  
+// Sum of SubArray3 : 6  
+// Sum of SubArray4 : 10 
+// Sum of SubArray5 : 15 
+// Sum of SubArray6 : 2  
+// Sum of SubArray7 : 5  
+// Sum of SubArray8 : 9  
+// Sum of SubArray9 : 14 
+// Sum of SubArray10 : 3 
+// Sum of SubArray11 : 7 
+// Sum of SubArray12 : 12
+// Sum of SubArray13 : 4 
+// Sum of SubArray14 : 9 
+// Sum of SubArray15 : 5 
+// Max Subarray sum: 15

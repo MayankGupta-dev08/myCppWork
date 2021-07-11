@@ -32,3 +32,12 @@ int main(){
     AllsubStrings(inp_s, op_s);
     return 0;
 }
+
+//
+// c
+// b
+// bc
+// a
+// ac
+// ab
+// abc

@@ -1,14 +1,14 @@
 /*Given an array arr[] of size N. The task is to find the first repeating element in an array of integers, i.e., an element that occurs more than once and whose index of first occurrence is smallest.
 AMAZON, ORACLE*/
 
-#include <iostream>
-#include <limits.h>             // for INT_MAX and INT_MIN
 //#include <bits/stdc++.h>
+#include <iostream>
+#include <climits>             // for INT_MAX and INT_MIN
 using namespace std;
 
 void firstRepeatingElement(int a[],int n){
     const int N = 1e5 + 2;
-    int indx[N];
+    int indx[N];    //for storing index of all unique numbers
     int minindx = INT_MAX;
     for(int i=0; i<N; i++){
         indx[i]= -1;
@@ -21,11 +21,11 @@ void firstRepeatingElement(int a[],int n){
             indx[a[i]] = i;
         }
     }
-    if (minindx==-1){
-        cout<<"-1"<<endl;
+    if (minindx==INT_MAX){
+        cout<<"No repeating element in array."<<endl;
     }
     else{
-        cout<<"First repeating Element: "<<a[minindx]<<" at: "<<minindx+1<<endl;
+        cout<<"First repeating Element: "<<a[minindx]<<" at index: "<<minindx<<endl;
     }
 
 }
@@ -43,3 +43,14 @@ int main(){
     firstRepeatingElement(a,n);
     return 0;
 }
+
+// Enter a size of array: 7
+// Enter the elements of your array.
+// 10 5 3 4 3 5 6       
+// First repeating Element: 5 at index: 1
+
+
+// Enter a size of array: 4
+// Enter the elements of your array.
+// 1 2 3 4
+// No repeating element in array.

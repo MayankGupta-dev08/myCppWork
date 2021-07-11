@@ -10,6 +10,7 @@ using namespace std;
 vector<int> stockSpan(vector<int> v){
     stack<pair<int, int>> st;
     vector<int> ans;
+    // this time we will push index of NGL in ans
     for (int i = 0; i < v.size(); i++){
         if(st.empty())
             ans.push_back(-1);
@@ -25,8 +26,11 @@ vector<int> stockSpan(vector<int> v){
         else
             ans.push_back(st.top().second);
         
+        // pushing curr value of array for checking in next iteration
         st.push({v[i], i});
     }
+
+    // Now we will convert those indices to req ans
     for (int i = 0; i < v.size(); i++){
         ans[i] = i-ans[i];
     }

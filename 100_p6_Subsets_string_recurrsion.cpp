@@ -24,7 +24,7 @@ void str_subsets(string ip_str, string op_str){
 int main(){
 
     // inputing only a word, cin enough, no need of getline(cin, inp_str) 
-    string inp_str;
+    string inp_str; //abcd
     cin>>inp_str;
     
     // Empty string to store output at every stage
@@ -34,3 +34,20 @@ int main(){
     
     return 0;
 }
+
+// {}
+// {d}
+// {c}
+// {cd}
+// {b}
+// {bd}
+// {bc}
+// {bcd}
+// {a}
+// {ad}
+// {ac}
+// {acd}
+// {ab}
+// {abd}
+// {abc}
+// {abcd}
