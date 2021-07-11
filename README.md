@@ -1,4 +1,6 @@
-# myCppWork _All of my c++ work, programs, notes and other stuff.._
+# myCppWork 
+>my c++ work, programs, notes and other stuff..
+
 ## cpp Files
 
 `01_helloWord.cpp`
