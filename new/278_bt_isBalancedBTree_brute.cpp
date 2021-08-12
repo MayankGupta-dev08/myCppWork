@@ -35,7 +35,7 @@ int calcHeight(Node* root){
     return max(calcHeight(root->left), calcHeight(root->right))+1;
 }
 
-// TC = O(n)
+// TC = O(n*n)
 bool isBalancedBTree(Node* root){
     if(root==NULL)
         return true;

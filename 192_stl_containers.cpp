@@ -155,7 +155,7 @@ void explainVector() {
 	cout << *(it) << " "<<endl; // prints 2
 
 	it = it + 2;
-	cout << *(it) << " "; // prints 40
+	cout << (*it) << " "; // prints 40
 
     // it will point to the memory address after the last element and not the last
 	vector<int>::iterator it1 = v1.end();  
@@ -393,9 +393,33 @@ void explainPQ() {
 
 }
 
+/*SET, ORDERED SET, UNORDERED SET, MULTISET
+	Ordered set
+	-	Present in #include <set> header file
+	-	it stores only unique elements
+	-	automatically sorts in ascending order
+	-	Elements are in sorted order
+	-	Implemented using balanced BST
+	-	Random access is not possible, i.e. you cann't get i'th element in O(1), only thru O(logN)
+	
+	Multi set
+	-	Present in #include <set> header file
+	-	can contain duplicates
+	-	rest all points are same as that for ordered BST
+	-	when erase function is used for a value which has multiple instance than all will be deleted at once
+	-	to delete only one/ very first instance of val, we can use ms.erase(ms.find())
+	
+	** For insertion, deletion and lower/upper_bound, the TC = O(logN) in set (ordered) and muti_set
 
-// it stores only unique elements
-// automatically sorts in ascending order
+	Unordered set
+	-	Present in #include <unordered_set> header file
+	-	it stores only unique elements
+	-	elements not in sorted order
+	-	random access not possible
+	-	implemented using hashing 
+	** For insertion and deletion , the TC = O(1) in avg case and O(N) in worst case for unordered_set
+	-	we can't implement the lower_bound and upper_bound functions for unordered_set as elements are not in any order
+*/
 void explainSet() {
 	set<int>st;
 	st.insert(1); // {1}
@@ -410,6 +434,36 @@ void explainSet() {
 
 	// begin(), end(), rbegin(), rend(), size(),
 	// empty() and swap() are same as those of above
+
+	cout<<st.size()<<endl;
+
+	// for printing the element in a set, by default in asc order
+	for(auto i: st)
+		cout<<i<<" ";
+	cout<<"\n";
+
+	// for printing the element in a set, by default in asc order
+	for(auto i=st.begin(); i!=st.end(); i++)
+		cout<<(*i)<<" ";
+	cout<<"\n";
+
+	// for printing the element in a set in reverse order
+	for(auto i=st.rbegin(); i!=st.rend(); i++)
+		cout<<(*i)<<" ";
+	cout<<"\n";
+
+	cout<<*st.lower_bound(2)<<"\n";	//2
+
+	set<int, greater<int>> sett;
+	sett.insert(1);
+	sett.insert(2);
+	sett.insert(3);
+	sett.insert(3);
+	sett.insert(4);
+	// for printing the element in a set, by default in desc order
+	for(auto i: sett)
+		cout<<i<<" ";
+	cout<<"\n";
 
 	// {1, 2, 3, 4, 5}
 	auto it = st.find(3);   //it return the index value if found
@@ -428,6 +482,8 @@ void explainSet() {
 	// {1, 4, 5}
 	st.erase(5); // erases 5 // takes logarithmic time
     // {1,4}
+	st.erase(st.begin());	//although st.begin() returns an iterator but erase function will work for begin() and end()
+	// {4}
 
     //count() returns 1 if present and 0 if not
 	int cnt = st.count(1); 
@@ -526,7 +582,7 @@ void explainMap() {
 
 
 	auto itr = mpp.find(3); // points to the position where 3 is found
-	cout<<*(itr).second; 
+	cout<<(*itr).second; 
 
 	auto it = mpp.find(5); // points to the end of the map since 5 not there
 

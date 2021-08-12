@@ -24,16 +24,16 @@ int main()
     l2 = lower_bound(a,a+size,7) - a;
     l3 = lower_bound(a,a+size,10) - a;
 
-    // Printing the lower bounds
-	cout<< "\nlower_bound for element 4 at position : "<<l1<<endl;
-	cout<< "\nlower_bound for element 7 at position : "<<l2<<endl;
+    // Printing the lower bounds indeces
+	cout<< "\nlower_bound for element 4 at position : "<<l1;
+	cout<< "\nlower_bound for element 7 at position : "<<l2;
 	cout<< "\nlower_bound for element 10 at position : "<<l3<<endl;
 
 	// Input vector
 	vector<int> v{ 10, 20, 30, 30, 30, 40, 50 };
 
 	// Print vector
-	cout << "Vector contains :";
+	cout << "\nVector contains :";
 	for (unsigned int i = 0; i < v.size(); i++)
 		std::cout << " " << v[i];
 	cout << "\n";
