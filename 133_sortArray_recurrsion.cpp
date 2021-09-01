@@ -1,4 +1,4 @@
-// To write a program ..
+// To write a program ..to sort an array using recurrsion
 
 //#include <bits/stdc++.h>
 #include <iostream>
@@ -21,9 +21,13 @@ void sort(int a[], int n){
         return;
     
     int maxIndex = getmaxIndex(a, n);
+    
+    // swapping the maxElement with arr[n-1]
     int temp = a[n-1];
     a[n-1] = a[maxIndex];
     a[maxIndex] = temp;
+    
+    // sorting reduced array as maxElement is already placed at last
     sort(a, n-1);
 }
 

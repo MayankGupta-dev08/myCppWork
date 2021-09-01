@@ -10,7 +10,7 @@ void Kadane_maxSubarraySum(int a[], int n){
 // if both positive and negative elements are there.
 // if only positive then sum till last element and if all negative than we have to use different function.
 
-    int currSum = 0, maxSum = 0;
+    int currSum = 0, maxSum = INT_MIN;
     for (int i=0; i<n; i++){
         currSum += a[i];
         maxSum = max(maxSum, currSum);
@@ -43,8 +43,8 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>a[i];
     }
-    // Kadane_maxSubarraySum(a,n);
-    Kadane_maxSubarraySum_allneg(a,n);
+    Kadane_maxSubarraySum(a,n);
+    // Kadane_maxSubarraySum_allneg(a,n);
     cout<<endl;
     return 0;
 }

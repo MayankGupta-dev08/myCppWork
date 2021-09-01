@@ -5,7 +5,7 @@
     /\   /\              
    4 5  6 7              level 2    //4 5 6 7
           \
-          8
+          8              level 3    //8
 height of the above binary tree = 4
 */
 
@@ -42,7 +42,7 @@ int main(){
     root->left->right = new Node(5);
     root->right->left = new Node(6);
     root->right->right = new Node(7);
-    root->right->right->left = new Node(8);
+    root->right->right->right = new Node(8);
 
     cout<<"Height of binary tree: "<<heightOfTree(root)<<endl;   //4
     delete root;

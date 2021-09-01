@@ -1,8 +1,10 @@
-// To write a program ..to geneate all possible subsets of a given set, where set is a coollection of distinct elements, so no duplicates.
-// For an array of n elements, we will have 2 ki power n. 
-// 2 ki power n -->  1<<n, for n =4  --> 1<<4 = 10000 = 16 
+// To write a program ..to geneate all possible subsets of a given set, where set is a collection of distinct elements, so no duplicates.
+    // For an array of n elements, we will have 2 ki power n. 
+    // 2 ki power n -->  1<<n, for n =4  --> 1<<4 = 10000 = 16 
 
-//#include <bits/stdc++.h>
+
+// this problem aka - all subsets - power set - all subsequenses
+
 #include <iostream>
 using namespace std;
 
@@ -42,3 +44,20 @@ int main(){
     subSets_recurr(ip_arr, n, i_pos, op_arr, curr_op_n);
     return 0;
 }
+
+// 
+// 4 
+// 3 
+// 3 4 
+// 2 
+// 2 4 
+// 2 3 
+// 2 3 4 
+// 1 
+// 1 4 
+// 1 3 
+// 1 3 4 
+// 1 2 
+// 1 2 4 
+// 1 2 3 
+// 1 2 3 4

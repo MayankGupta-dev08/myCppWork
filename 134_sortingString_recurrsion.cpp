@@ -1,6 +1,5 @@
 // To write a program ..to sort a string using recurrsion
 
-//#include <bits/stdc++.h>
 #include <iostream>
 #include <string>
 using namespace std;
@@ -28,10 +27,12 @@ void sortString(string &s){
 }
 
 int main(){
-
     string s = "897456123";
+    cout<<"String before sorting: "<<s<<endl;
     sortString(s);
-    cout<<s;
-    cout<<endl;
+    cout<<"String after sorting : "<<s<<endl;
     return 0;
 }
+
+// String before sorting: 897456123
+// String after sorting : 123456789

@@ -1,16 +1,16 @@
 /*  building a binary tree using preorder array and inorder array
-        1
-      /  \    
-    /     \
-   2      3             
- /  \   /  \
-4   5  6   7
+                1
+              /  \    
+            /     \
+           2      3             
+         /  \   /  \
+        4   5  6   7
 
 ALGORITHM
     1.  Pick an element from preorder array [0,n) and create a node
         //starting from 0, since in prorder the root is at 0 in preorder array
     2.  increment preorder idx
-    3.  search for the picked eleement's pos inorder array and store it in pos
+    3.  search for the picked element's pos in inorder array and store it's position
     4.  call to build the left subtree from inorder's 0 to pos-1
     5.  call to build the right subtree from inorder's pos+1 to n
     6.  return to node

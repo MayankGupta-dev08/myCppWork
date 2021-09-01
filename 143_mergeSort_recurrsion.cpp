@@ -1,6 +1,6 @@
 // To write a program ..for merge sort
 
-//#include <bits/stdc++.h>
+//time complexity = O(nlogn)
 #include <iostream>
 using namespace std;
 

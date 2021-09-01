@@ -1,16 +1,14 @@
-// To write a program ..
+// To write a program ..to calculate the number of combinations for a given value of n and r in nCr.
 
 #include <iostream>
 using namespace std;
 
 long fact(int num){
-    if (num<=0 || num==1){
+    if (num<=0 || num==1)
         return 1;
-    }
-    else{
+
+    else
         return num*fact(num-1);
-    }
-    
 }
 
 int main(){
