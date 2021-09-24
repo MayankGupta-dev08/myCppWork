@@ -34,13 +34,14 @@ int setBitNumber(int n){
 // Driver code
 int main()
 {
-	int n = 8;
+	int n = 14;	//1110
     int ans = MSBitNumber(n);
     int msb_num = (1 << ans);
-	cout<<"msb: "<<ans<<endl;
-    cout<<"MSB number: "<<msb_num<<endl<<endl;
+	cout<<"msb: "<<ans<<endl;	//3
+    cout<<"MSB number: "<<msb_num<<endl;	//8
+	cout<<endl;
 
-    cout<<"MSB: "<<setBitNumber(n)<<endl;
-    cout<<"MSB number: "<<(1<<setBitNumber(n));
+    cout<<"MSB: "<<setBitNumber(n)<<endl;	//3
+    cout<<"MSB number: "<<(1<<setBitNumber(n));	//8
 	return 0;
 }

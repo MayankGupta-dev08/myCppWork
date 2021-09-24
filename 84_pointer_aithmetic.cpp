@@ -10,8 +10,8 @@ int main(){
 
     int a = 55;
     int *ptr1 = &a;
-    cout<<"*ptr1: "<<*ptr1<<endl;
-    cout<<"ptr1: "<<ptr1<<endl;
+    cout<<"*ptr1: "<<*ptr1<<endl;   //55
+    cout<<"ptr1: "<<ptr1<<endl;     //address of a
     ++ptr1;
     cout<<"(++ptr1): "<<ptr1<<endl;
     cout<<"*(++ptr1): "<<*ptr1<<" - Garbage value"<<endl;

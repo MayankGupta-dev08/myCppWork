@@ -75,6 +75,6 @@
         "valarray": "cpp",
         "variant": "cpp"
     },
-    "workbench.colorTheme": "Monokai Pro",
+    "workbench.colorTheme": "Atom One Dark",
     "workbench.preferredDarkColorTheme": "One Dark Pro"
 }

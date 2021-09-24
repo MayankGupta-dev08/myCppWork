@@ -9,11 +9,11 @@ using namespace std;
 int main(){
 
     int arr[] = {10,20,30,40,50};
-    cout<<*arr<<endl;        //value of element of index 0
-    cout<<*(arr+1)<<endl;    //value of element of index 1
-    cout<<*(arr+3)<<endl;    //value of element of index 1
-    cout<<arr[0]<<endl;      //value of element of index 0
-    cout<<arr<<endl;         //address of index 0 element
+    cout<<*arr<<endl;        //value of element of index 0  //10
+    cout<<*(arr+1)<<endl;    //value of element of index 1  //20
+    cout<<*(arr+3)<<endl;    //value of element of index 3  //40
+    cout<<arr[0]<<endl;      //value of element of index 0  //10
+    cout<<arr<<endl;         //address of index 0 element   //0x61feec
 
 // Normally printing the elements of array
     for (int i = 0; i < 5; i++)
@@ -32,6 +32,7 @@ int main(){
 
 // Doing same thing using pointers
     int *ptr = arr;
+    // here if we try to find the size of array using ptr than it won't give the exact size of array
     for (int i = 0; i < 5; i++){
         cout<<*ptr<<" ";
         ptr++;

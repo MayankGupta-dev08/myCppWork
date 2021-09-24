@@ -1,4 +1,4 @@
-/* To write a program to print FLoydsTriangle
+/* To write a program to print FLoyds Triangle
 Enter the numbers of rows: 5
 
 1

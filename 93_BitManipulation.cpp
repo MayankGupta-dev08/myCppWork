@@ -1,12 +1,18 @@
 /*
 Get Bit
-suppose, n=5 --> n = 0101 (suppose there is a big number and we want to know whether at a specific position their is 1 or 0 so to do this we will use get bit, if ti returns 1 then it is 1 and if 0 than 0 since we will use & operator.)
+suppose, n=5 --> n = 0101 (suppose there is a big number and we want to know whether at a specific position their is 1 or 0 so to do this we will use get bit, if it returns 1 then it is 1 and if 0 than 0 since we will use & operator.)
 and we need to find out the bit position at i=2         (5 4 3 2 1 0)
 so, we will (left shift) use 1<<i, --> 0100
 0101 & 0100 = 0100
 if (n & (1<<i))!=0, then it is 1
 
-Set Bit -  to set a bit as 1 fro a given number at a given position
+To check whether a number is odd or even
+    1.  (n%2==0) ? cout<<even; : cout<<odd;
+    2.  ((n&1)==0) ? cout<<even; : cout<<odd;
+    approach 2 is faster than approach 1
+
+
+Set Bit -  to set a bit as 1 for a given number at a given position
 
 Clear Bit - for a given number removing the 1 from binary form of that number at a given position
 
@@ -32,12 +38,20 @@ Bitwise XOR operation between n and mask toggle the ith bit
 4>>1  --> 0100>>1  -->  0010    -->  4/2 = 2 
 4>>2  --> 0100>>2  -->  10000   -->  4/(2*2) = 1 
 9>>2  --> 1001>>2  -->  0010    -->  9/(2*2) = 2 
-9>>2  --> 0011>>2  -->  0000    -->  3/(2*2) = 0 
+9>>3  --> 0011>>3  -->  0000    -->  3/(2*2) = 0 
 7>>2  --> 0111>>2  -->  0001    -->  7/(2*2) = 1 
 
 */
 
-// To write a program ..
+// Binary operators: 
+    // and                      -->  &
+    // or                       -->  |
+    // xor                      -->  ^
+    // nagation/ compliment     -->  ~
+    // left shift               -->  <<
+    // right shift              -->  >>
+
+
 
 //#include <bits/stdc++.h>
 #include <iostream>
@@ -66,10 +80,13 @@ int updateBit(int n, int pos, int val){
     return (n | (val<<pos));
 }
 
-int toggleBit(int n, int pos){
-    // xor --> same = 0
-    // xor --> different = 1
-    return (n xor (1<<pos));
+/* In Xor - if odd number of 1s then only result is 1
+       - if even number of 1s or only 0s then result is 0 
+       
+       also - n^n = 0 and 0^n = n
+*/
+int toggleBit(int n, int pos){ 
+    return (n^(1<<pos));
 }
 
 
@@ -84,7 +101,7 @@ int main(){
     cout<<clearBit(5, 2)<<endl;   //n=5 and pos = 2 ---> 1
     cout<<updateBit(5, 1,1)<<endl;   //n=5 and pos = 1 and val = 1 ---> 7
     cout<<toggleBit(5, 1)<<endl;     //n=5 and pos = 1 ---> 7
-    cout<<toggleBit(5, 2)<<endl;     //n=5 and pos = 1 ---> 3
+    cout<<toggleBit(5, 2)<<endl;     //n=5 and pos = 2 ---> 1
     
     return 0;
 }

@@ -25,7 +25,7 @@ int game_recurr(vector<int> &players, int k, int idx){
         return players[0];
     
     idx = (idx+k)%players.size();
-    players.erase(players.begin()+idx); //erases element at index idx   //vector is automatically reduced and elements have arranged themselves.
+    players.erase(players.begin()+idx); //erases element at index idx from beginning //vector is automatically reduced and elements have arranged themselves.
     game_recurr(players, k, idx);
 }
 

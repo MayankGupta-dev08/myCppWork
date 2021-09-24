@@ -27,5 +27,10 @@ int main(){
     getline(cin, str4);
     cout<<str4<<endl;
 
+
+    string s1 = "abx";
+    cout<<s1<<endl;
+    s1 = "bfdsjf";  //change original s1, just like for integer
+    cout<<s1<<endl;
     return 0;
 }

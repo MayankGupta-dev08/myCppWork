@@ -40,12 +40,10 @@ bool ispower2(int n){
 
 
 int main(){
-
-    // cout<<pow2(8)<<endl;
-    // cout<<pow2(9)<<endl;
-    
-    int n1=8, n2=9;
-    cout<<n1<<": "<<ispower2(n1)<<endl;
-    cout<<n2<<": "<<ispower2(n2)<<endl;
+    //isPowerOf2 means if it is 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024...
+    int n1=8, n2=9, n3=6;
+    cout<<n1<<": "<<ispower2(n1)<<endl; //8: 1
+    cout<<n2<<": "<<ispower2(n2)<<endl; //9: 0
+    cout<<n3<<": "<<ispower2(n3)<<endl; //6: 0
     return 0;
 }

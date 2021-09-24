@@ -9,20 +9,33 @@ using namespace std;
 // using Bit manipulation
 void subsets(int arr[], int n){
     for (int i = 0; i < (1<<n); i++){
-        cout<<"{ ";
         for (int j = 0; j < n; j++){
-            if(i & (1<<j)){
+            // using get bit property for value of i
+            if(i & (1<<j))
                 cout<<arr[j]<<" ";
-            }
+            
+            else
+                cout<<"_ ";
         }
-        cout<<"}"<<endl;
+        cout<<endl;
     }
 }
 
 
 int main(){
 
-    int arr[] = {1,2,3,4};
-    subsets(arr, 4);
+    int arr[] = {1,2,3};
+    subsets(arr, 3);
     return 0;
 }
+
+/* 
+_ _ _ 
+1 _ _
+_ 2 _
+1 2 _
+_ _ 3
+1 _ 3
+_ 2 3
+1 2 3 
+*/

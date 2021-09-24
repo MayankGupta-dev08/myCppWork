@@ -1,0 +1,1 @@
+#define deb(x) cout<<#x<<" is "<<x<<endl;

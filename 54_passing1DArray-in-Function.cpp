@@ -32,7 +32,7 @@ int main(){
     
     int size = sizeof(arr)/sizeof(arr[0]);
     cout<<"size:"<<size<<endl;
-    print1(arr, n);
-    // print2(arr, n);
+    // print1(arr, n);
+    print2(arr, n);
     return 0;
 }

@@ -1,4 +1,4 @@
-/* Pointers whichstores the address of a variable and is a refernce of that variiable.
+/* Pointers which stores the address of a variable and is a refernce of that variiable.
 A pointer is associated with a type (of the value it points to), which is specified during declaration.
 A pointer can only hold an address of the declared type; it cannot hold an address of a different type.
 
@@ -56,6 +56,10 @@ int main(){
     iPtr = &j;  // You can change the address stored in a pointer
     cout<<"After: iPtr = &j\n"<<"j: "<<j<<" *iPtr "<<*iPtr<<endl;
     cout<<"You can change the address stored in a pointer"<<endl;
+
+    
+    /*The size of a pointer in C/C++ is not fixed. It depends upon different issues like Operating system, CPU architecture etc. Usually it depends upon the word size of underlying processor for example for a 32 bit computer the pointer size can be 4 bytes for a 64 bit computer the pointer size can be 8 bytes. So for a specific architecture pointer size will be fixed.
+    It is common to all data types like int *, float *, char*, bool* etc.*/
 
     return 0;
 }

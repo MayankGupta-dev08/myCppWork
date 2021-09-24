@@ -1,0 +1,21 @@
+# for commenting we use #symbol
+
+# for ignoring a particular file 
+Filename.txt
+# remember this will ignore all files with the above name in this dir or even in any sub directory
+
+# if we want to ignore a file in this dir only and not in the subdir(s)
+/Filename.txt
+
+# for ignoring all files of a particular extension
+*.exe
+
+# for ignoring all files of a more than 1 extensions (here .pxt .a)
+*.[apxt]
+
+# for ignoring all the files in the subdir (ie. ignoring full subdir)
+temp/
+
+# We can use ? in case of situation like ->  we have file named lib.txt, lob.txt, lkb.pxt, lib.atx and if we use
+l?b.?xt
+# than except lib.atx all with l?b.?xt name format will get ignore, whether in dir or subDir
