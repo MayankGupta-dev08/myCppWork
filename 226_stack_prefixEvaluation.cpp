@@ -1,4 +1,17 @@
 // To write a program ..for evaluating a prefix expression
+// pre fix expression example = "/52"
+    // untill i>=0
+    // start iterating from index = arr.length-1
+    // push in stack untill an a nondigit char
+    // pop 2 elements from stack 
+    // oprand1 = st.top(); st.pop();
+    // oprand2 = st.top(); st.pop();
+    // ans = oprand1 exp oprand2
+    // push ans
+
+/* trick to remember - postfix --> -ab = a-b
+    pre -->jo pehle pop hua hai stack se vo oprand1*/
+
 
 //#include <bits/stdc++.h>
 #include <iostream>

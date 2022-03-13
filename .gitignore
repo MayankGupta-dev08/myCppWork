@@ -10,6 +10,9 @@ Filename.txt
 # for ignoring all files of a particular extension
 *.exe
 
+# for not ignoring a particular file with ext which is ignored
+!lib.exe
+
 # for ignoring all files of a more than 1 extensions (here .pxt .a)
 *.[apxt]
 

@@ -1,4 +1,16 @@
 // To write a program ..for evaluating a postfix expression
+// post fix expression example = "52/"
+    // untill i<arr.length
+    // start iterating from index0
+    // push in stack untill an a nondigit char
+    // pop 2 elements from stack 
+    // oprand2 = st.top(); st.pop();
+    // oprand1 = st.top(); st.pop();
+    // ans = oprand1 exp oprand2
+    // push ans
+
+/* trick to remember - postfix --> ab- = a-b
+    post -->jo baad mein pop hua hai vo oprand1*/
 
 //#include <bits/stdc++.h>
 #include <iostream>
